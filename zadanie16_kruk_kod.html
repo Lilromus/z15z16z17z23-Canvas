@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+
+<script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_kruk()"/></br>
+     Kod do pliku zadanie16_kruk.html
+     <p class="ex">
+     &lt;!DOCTYPE html&gt;</br>
+     &lt;html lang=&quot;pl&quot;&gt;</br>
+     &lt;head&gt;</br>
+      &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+      &lt;title&gt;Zadanie 16&lt;/title&gt;</br>
+         &lt;script type=&quot;text/javascript&quot;&gt;</br>
+         function rysuj() {</br>
+         var rysowanie = document.getElementById('obrazek');</br>
+         var rodzaj = rysowanie.getContext('2d');</br>
+      rodzaj.beginPath();</br>
+      rodzaj.arc(200,50,30,Math.PI,3,false);</br>
+      rodzaj.closePath();</br>
+      rodzaj.lineWidth = 10;</br>
+      rodzaj.strokeStyle=&quot;blue&quot;;</br>
+      rodzaj.stroke();</br>
+    </br>
+      rodzaj.beginPath();</br>
+      rodzaj.arc(240,75,30,Math.PI,3,false);</br>
+      rodzaj.closePath();</br>
+      rodzaj.lineWidth = 10;</br>
+      rodzaj.strokeStyle=&quot;yellow&quot;;</br>
+      rodzaj.stroke();</br>
+    </br>
+      rodzaj.beginPath();</br>
+      rodzaj.arc(280,50,30,Math.PI,3,false);</br>
+      rodzaj.closePath();</br>
+      rodzaj.lineWidth = 10;</br>
+      rodzaj.strokeStyle=&quot;black&quot;;</br>
+      rodzaj.stroke();</br>
+    </br>
+      rodzaj.beginPath();</br>
+      rodzaj.arc(320,75,30,Math.PI,3,false);</br>
+      rodzaj.closePath();</br>
+      rodzaj.lineWidth = 10;</br>
+      rodzaj.strokeStyle=&quot;green&quot;;</br>
+      rodzaj.stroke();</br>
+    </br>
+      rodzaj.beginPath();</br>
+      rodzaj.arc(360,50,30,Math.PI,3,false);</br>
+      rodzaj.closePath();</br>
+      rodzaj.lineWidth = 10;</br>
+      rodzaj.strokeStyle=&quot;red&quot;;</br>
+      rodzaj.stroke();</br>
+    </br>
+</br>
+      }</br>
+      &lt;/script&gt;</br>
+     &lt;/head&gt;</br>
+     &lt;body onload=&quot;rysuj();&quot;&gt;</br>
+      &lt;canvas id=&quot;obrazek&quot; width=&quot;3000&quot; height=&quot;3000 &quot;&gt;</br>
+      Twoja przeglądarka nie wspiera Canvas!</br>
+     Zainstaluj Internet Explorer 9.x</br>
+      &lt;/canvas&gt;</br>
+     &lt;/body&gt;</br>
+     &lt;/html&gt;</br>
+    </br>
+
+
+    </p>
+</body>
+</html>

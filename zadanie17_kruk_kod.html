@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+
+<script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_kruk()"/></br>
+     Kod do pliku zadanie17_kruk.html
+     <p class="ex">
+        &lt;!DOCTYPE html&gt;</br>
+        &lt;html&gt;</br>
+         &lt;head&gt;</br>
+          &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+          &lt;style&gt;</br>
+           .ex {</br>
+            border: solid 1px #000000;</br>
+            background: #fffff5;</br>
+            font-family: &quot;Courier New&quot;, Courier, monospace;</br> 
+            padding: 7px;</br>
+            font-size: 80%;</br>
+            margin: 0 0 1em;</br>
+           }</br>
+          &lt;/style&gt;</br>
+        </br>
+    </br>
+        &lt;script type=&quot;text/javascript&quot;&gt;</br>
+           function okno_zamknij_kruk()</br>
+           {</br>
+           window.close()</br>
+           }</br>
+           &lt;/script&gt;</br>
+        </br>
+    </br>
+         &lt;/head&gt;</br>
+         &lt;body&gt;</br>
+        </br>
+           &lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_kruk()&quot;/&gt;&lt;/br&gt;</br>
+             Kod do pliku zadanie16_kruk.html</br>
+             &lt;p class=&quot;ex&quot;&gt;</br>
+             &amp;lt;!DOCTYPE html&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;html lang=&amp;quot;pl&amp;quot;&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;head&amp;gt;&lt;/br&gt;</br>
+              &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;&lt;/br&gt;</br>
+              &amp;lt;title&amp;gt;Zadanie 16&amp;lt;/title&amp;gt;&lt;/br&gt;</br>
+                 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/br&gt;</br>
+                 function rysuj() {&lt;/br&gt;</br>
+                 var rysowanie = document.getElementById('obrazek');&lt;/br&gt;</br>
+                 var rodzaj = rysowanie.getContext('2d');&lt;/br&gt;</br>
+              rodzaj.beginPath();&lt;/br&gt;</br>
+              rodzaj.arc(200,50,30,Math.PI,3,false);&lt;/br&gt;</br>
+              rodzaj.closePath();&lt;/br&gt;</br>
+              rodzaj.lineWidth = 10;&lt;/br&gt;</br>
+              rodzaj.strokeStyle=&amp;quot;blue&amp;quot;;&lt;/br&gt;</br>
+              rodzaj.stroke();&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+              rodzaj.beginPath();&lt;/br&gt;</br>
+              rodzaj.arc(240,75,30,Math.PI,3,false);&lt;/br&gt;</br>
+              rodzaj.closePath();&lt;/br&gt;</br>
+              rodzaj.lineWidth = 10;&lt;/br&gt;</br>
+              rodzaj.strokeStyle=&amp;quot;yellow&amp;quot;;&lt;/br&gt;</br>
+              rodzaj.stroke();&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+              rodzaj.beginPath();&lt;/br&gt;</br>
+              rodzaj.arc(280,50,30,Math.PI,3,false);&lt;/br&gt;</br>
+              rodzaj.closePath();&lt;/br&gt;</br>
+              rodzaj.lineWidth = 10;&lt;/br&gt;</br>
+              rodzaj.strokeStyle=&amp;quot;black&amp;quot;;&lt;/br&gt;</br>
+              rodzaj.stroke();&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+              rodzaj.beginPath();&lt;/br&gt;</br>
+              rodzaj.arc(320,75,30,Math.PI,3,false);&lt;/br&gt;</br>
+              rodzaj.closePath();&lt;/br&gt;</br>
+              rodzaj.lineWidth = 10;&lt;/br&gt;</br>
+              rodzaj.strokeStyle=&amp;quot;green&amp;quot;;&lt;/br&gt;</br>
+              rodzaj.stroke();&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+              rodzaj.beginPath();&lt;/br&gt;</br>
+              rodzaj.arc(360,50,30,Math.PI,3,false);&lt;/br&gt;</br>
+              rodzaj.closePath();&lt;/br&gt;</br>
+              rodzaj.lineWidth = 10;&lt;/br&gt;</br>
+              rodzaj.strokeStyle=&amp;quot;red&amp;quot;;&lt;/br&gt;</br>
+              rodzaj.stroke();&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+        &lt;/br&gt;</br>
+              }&lt;/br&gt;</br>
+              &amp;lt;/script&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;/head&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;body onload=&amp;quot;rysuj();&amp;quot;&amp;gt;&lt;/br&gt;</br>
+              &amp;lt;canvas id=&amp;quot;obrazek&amp;quot; width=&amp;quot;3000&amp;quot; height=&amp;quot;3000 &amp;quot;&amp;gt;&lt;/br&gt;</br>
+              Twoja przeglądarka nie wspiera Canvas!&lt;/br&gt;</br>
+             Zainstaluj Internet Explorer 9.x&lt;/br&gt;</br>
+              &amp;lt;/canvas&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;/body&amp;gt;&lt;/br&gt;</br>
+             &amp;lt;/html&amp;gt;&lt;/br&gt;</br>
+            &lt;/br&gt;</br>
+        </br>
+    </br>
+            &lt;/p&gt;</br>
+        &lt;/body&gt;</br>
+        &lt;/html&gt;</br>
+
+
+    </p>
+</body>
+</html>

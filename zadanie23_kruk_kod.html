@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+
+
+<script type="text/javascript">
+   function okno_zamknij_kruk()
+   {
+   window.close()
+   }
+   </script>
+
+
+ </head>
+ <body>
+
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_kruk()"/></br>
+   Kod do pliku zadanie23_kruk.html
+   <p class="ex">  
+     &lt;!DOCTYPE html&gt;</br>
+     &lt;html lang=&quot;pl&quot;&gt;</br>
+     &lt;head&gt;</br>
+     &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+     &lt;title&gt;Zadanie 23&lt;/title&gt;</br>
+     &lt;script type=&quot;text/javascript&quot;&gt;</br>
+      var canvas</br>
+      var rodzaj;</br>
+      var x = 200;</br>
+      var y = 20;</br>
+      var dy = 10;</br>
+      var kolory = new Array(&quot;blue&quot;, &quot;red&quot;, &quot;yellow&quot;, &quot;green&quot;);</br>
+      var i = 0;</br>
+     135</br>
+      function draw() {</br>
+      canvas = document.getElementById('image1');</br>
+      rodzaj = canvas.getContext('2d');</br>
+      setInterval(anim, 100);</br>
+      }</br>
+      function anim() {</br>
+      rodzaj.clearRect(0, 0, canvas.width, canvas.height);</br>
+      y += dy;</br>
+      if (y &gt; (canvas.height - 20)) {</br>
+      dy = -10;</br>
+      i = ++i % kolory.length;</br>
+      }</br>
+      if (y &lt; 20) {</br>
+      dy = 10;</br>
+      i = ++i % kolory.length;</br>
+      }</br>
+      rodzaj.beginPath();</br>
+      rodzaj.fillStyle = kolory[i];</br>
+      rodzaj.arc(x, y, 20, 0, Math.PI * 2, true);</br>
+      rodzaj.closePath;</br>
+      rodzaj.fill();</br>
+      }</br>
+     &lt;/script&gt;</br>
+      &lt;style type=&quot;text/css&quot;&gt;</br>
+      canvas { border: 1px solid blue; }</br>
+      &lt;/style&gt;</br>
+     &lt;/head&gt;</br>
+     &lt;body onload=&quot;draw();&quot;&gt;</br>
+     &lt;canvas id=&quot;image1&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;</br>
+     Twoja przeglądarka nie wspiera elementu canvas!</br>
+     Pobierz Internet Explorer 9 lub nowszą wersję!</br>
+     &lt;/canvas&gt;</br>
+     &lt;/body&gt;</br>
+     &lt;/html&gt;</br>
+
+    </br>
+
+    </p>
+</body>
+</html>
